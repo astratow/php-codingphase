@@ -7,9 +7,10 @@
 	{	
 		public $doors = 4;
 		
-		public function __construct($name)
+		public function __construct($name, $doors=2, $color="red")
 		{
-			$this->doors = 2;
+			$this->doors = $doors;
+			$this->color = $color;
 			$this->name = $name;
 
 			// echo 'This has just got triggered';
@@ -37,11 +38,7 @@
 <body>
  <h1> hello world
  </h1>
- <p><?php 
-
-	echo $honda->doors = 2;
-	echo "<pre>" . var_dump($honda) . "</pre>";
-?>
+ <p>
 	</p>
 </body>
 </html>
