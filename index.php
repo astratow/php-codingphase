@@ -7,7 +7,7 @@
 	{	
 		public $doors = 4;
 		
-		public function __construct($name, $doors=2, $color="red")
+		public function __construct($name, $doors=3, $color="Red")
 		{
 			$this->doors = $doors;
 			$this->color = $color;
@@ -18,14 +18,23 @@
 		public function print_name(){
 			echo $this->name;
 		}
+		public function statement(){
+			echo "<h1>This car is a {$this->color} {$this->name} and it has {$this->doors} doors</h1>";
+		}
 	}
 
-	$honda = new Car('Civic');
+	$honda = new Car('Honda Civic');
+	$GreenHonda = new Car("Honda Civic", 2, "Green");
+	$BMW = new Car("BMW M6", 4, "Space Grey");
 	
-	$honda->print_name();
+
+	$honda->statement();
+	$GreenHonda->statement();
+	$BMW->statement();
+	// $honda->print_name();
 	// echo $this->name;
-	echo $honda->doors = 2;
-	echo "<pre>" . var_dump($honda) . "</pre>";
+	// echo $honda->doors = 2;
+	// echo "<pre>" . var_dump($honda) . "</pre>";
 
 ?>
 <!DOCTYPE html5>
@@ -36,8 +45,8 @@
 	<title></title>
 </head>
 <body>
- <h1> hello world
- </h1>
+ <!-- <h1> hello world
+ </h1> -->
  <p>
 	</p>
 </body>
