@@ -1,8 +1,9 @@
+<!-- BMW.php -->
 <?php
-	require_once('car.php');
-	class Honda extends Car{
+	require_once("car.php");
+	class BMW extends Car{
 
-		public $company = "Honda";
+		public $company = "BMW";
 
 
 		public function __construct($name, $doors, $color, $price){
@@ -13,7 +14,7 @@
 		}
 
 		public function price(){
-			echo "<h1>The price for this {$this->company} {$this->name} is $ {$this->price}.</h1>";
+			echo "The price for this {$this->company} {$this->name} is $ {$this->price}.";
 		}
 	}
 ?>
