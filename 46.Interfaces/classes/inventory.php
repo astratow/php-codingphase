@@ -1,6 +1,10 @@
 <?php
 	require_once("car.php");
-	class Inventory{
+
+	interface InventoryInterface{
+		public function carsSold();
+	}
+	class Inventory implements InventoryInterface{
 
 
 		// public function __construct(){
@@ -15,6 +19,10 @@
 			$totalAfter = $companies[$company] - $numberOfCars;
             // return $companies[$company];
 			return "{$totalAfter} Total of cars left after purchase. ";
+		}
+		public function carsSold()
+		{
+			echo "<h2>Today we sold {$numberOfCars}. </h2>";
 		}
 	}
 ?>
