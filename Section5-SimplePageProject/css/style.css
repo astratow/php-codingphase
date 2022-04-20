@@ -1,0 +1,22 @@
+.container{
+    max-width: 1200;
+    margin: 0 auto;
+}
+header{
+    margin: 100px 0 0;
+    background: black;
+    color:white;
+    text-align: center;
+
+}
+header a{
+    color: white;
+    padding: 20px;
+    display: inline-block;
+}
+body{
+    background: #1b1b1b;
+}
+section{
+    background: white;
+}

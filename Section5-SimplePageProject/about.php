@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    
+<div class="container">
+<?php include ("includes/header.php") ?>
+        <section>
+            <h1>About</h1>
+        </section>
+    </div>
 </body>
 </html>
