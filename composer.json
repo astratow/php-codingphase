@@ -1,0 +1,17 @@
+{
+    "name": "am/php-codingphase",
+    "description": "PHP 7 and laravel course by Joe Santos project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Am\\PhpCodingphase\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "astratow",
+            "email": "davno_pora@mail.com"
+        }
+    ],
+    "require": {}
+}

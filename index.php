@@ -1,5 +1,5 @@
 <?php
-require("/classes/honda.php");
+require("classes/honda.php");
 
 $car_1 = new Honda("Civic", 2, "Green", 25000);
 $car_1->statement();

@@ -6,12 +6,13 @@
             $database->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             echo "<h4 style='color: green;'>Connected to database</h4>";
             return $database;
-        } catch($PDOException $e){
+        } catch(PDOException $e){
             echo "<h4 style='color: red;'>" .$e->getMessage(). "</h4>";
         }
     }
     $pdo = connectDB();
-    function initMigration(PDO){
+    
+    function initMigration($pdo){
         try{
             $statement = $pdo->prepare(
                 'CREATE TABLE IF NOT EXISTS users(
